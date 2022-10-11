@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <script src="src/model/Book.js"></script>
+  <style>
+    body {
+      background-color: rgb(255, 223, 181);
+    }
+
+    button {
+      background-color: aquamarine;
+      height: 30px;
+      width: 200px;
+    }
+
+    li {
+      padding: 10px;
+      margin-right: 160px;
+    }
+
+    button:hover {
+      background-color: aqua;
+    }
+  </style>
+</head>
+<center>
+
+  <body>
+    <h1>Inventory Management</h1>
+    <hr>
+    <menu>
+      <ul style="list-style-type: none;">
+        <li>
+          <a href="createBook.html"><button type="button">Add New Book</button></a>
+        </li>
+        <li>
+          <a href="updateBook.html"><button type="button">Update Book</button></a>
+        </li>
+        <li>
+          <a href="deleteBook.html"><button type="button">Delete Book</button></a>
+        </li>
+        <li>
+          <a href="listBooks.html"><button type="button">List Books</button></a>
+        </li>
+        <li><button type="button" onclick="Book.clearData()">Clear Data !</button></li>
+      </ul>
+    </menu>
+  </body>
+</center>
+
+</html>

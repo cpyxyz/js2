@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Inventory</title>
+  <script src="src/controller/initialize.js"></script>
+  <script src="src/model/Book.js"></script>
+  <script src="src/view/updateBook.js"></script>
+  <script>
+    window.addEventListener('load', init.view.updateBook.setupUI);
+  </script>
+  <style>
+    body {
+      background-color: rgb(255, 223, 181);
+    }
+
+    button {
+      background-color: aquamarine;
+      height: 30px;
+      width: 100px;
+      margin-left: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>Update Book</h1>
+    <hr>
+    <form id="Book">
+      <p>
+        <label>Book:
+          <select name="selectBook">
+            <option value="">---</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <label>ISBN <br><input type="text" name="isbn" /></label>
+      </p>
+      <p>
+        <label>Title <br><input name="title" /></label>
+      </p>
+      <p>
+        <label>Year <br><input name="year" /></label>
+      </p>
+      <p>
+        <label>Author <br><input name="author" /></label>
+      </p>
+      <p><button type="button" name="commit">Save</button></p>
+    </form>
+    <nav><a href="index.html">Home</a></nav>
+  </center>
+
+</body>
+
+</html>

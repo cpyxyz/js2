@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Inventory</title>
+  <script src="src/controller/initialize.js"></script>
+  <script src="src/model/Book.js"></script>
+  <script src="src/view/deleteBook.js"></script>
+  <script>
+    window.addEventListener('load', init.view.deleteBook.setupUI);
+  </script>
+  <style>
+    body {
+      background-color: rgb(255, 223, 181);
+    }
+
+    button {
+      background-color: aquamarine;
+      height: 30px;
+      width: 100px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>Delete Book</h1>
+    <hr>
+    <form id="Book">
+      <p>
+        <label>Select book:
+          <select name="selectBook">
+            <option value="">---</option>
+          </select>
+        </label>
+      </p>
+      <p><button type="button" name="commit">Delete</button></p>
+    </form>
+    <nav><a href="index.html">Home</a></nav>
+  </center>
+</body>
+
+</html>
